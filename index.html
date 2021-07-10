@@ -6,8 +6,7 @@
     <title>NASA APOD</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=www.nasa.gov">
-    <!-- ZTM Favicon -->
-    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+ 
 </head>
 <body>
 
@@ -16,51 +15,32 @@
         <img src="rocket.svg" alt="Rocket Loader">
     </div>
 
-    <!-- container  -->
-    <div class="container">
+     <!-- Container -->
+     <div class="container">
+        <span class='name'><h2>NASA APOD</h2></span>
         <!-- Navigation -->
         <div class="navigation-container">
             <span class="background"></span>
-                <!-- Results Nav -->
-                <span class="navigation-items" id="resultsNav">
-                    <h3 class="clickable">Favorites</h3>
-                    <h3>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</h3>
-                    <h3 class="clickable">Load More</h3>
-                </span>
-                <!-- Favorites Nav -->
-                <span class="navigation-items hidden" id="favoritesNav">
-                    <h3 class="clickable">Load More NASA images</h3>
-                </span>
+            <!-- Results Nav -->
+            <span class="navigation-items" id="resultsNav">
+               
+                <h3 class="clickable" onclick="updateDOM('favorites')">Favorites</h3>
+                <h3>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</h3>
+                <h3 class="clickable" onclick="getNasaPictures()">Load More</h3>
+            </span>
+            <!-- Favorites Nav -->
+            <span class="navigation-items hidden" id="favoritesNav">
+                <h3 class="clickable" onclick="getNasaPictures()">Load More NASA Images</h3>
+            </span>
         </div>
-        <!-- Images -->
-        <div class="images-container">
-            <div class="card">
-                <a href="" title="View Full Image" target="_blank">
-                    <img src="https://apod.nasa.gov/apod/image/2107/LRVBPIX3M82Crop.jpg" alt="NASA picture of the day" class="card-img-top">
-                </a>
-
-                <div class="card-body">
-                    <h5 class="card-title">Title of the Image</h5>
-                    <p class="clickable">Add to Favorites</p>
-                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo esse natus harum maxime voluptatum. Doloremque iste laudantium porro deleniti praesentium nisi velit explicabo sapiente tempore et, eum amet cumque optio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, est repellendus! Fugit perspiciatis numquam distinctio sequi repellendus expedita doloribus nihil illo impedit? Nobis atque molestias exercitationem, a ea minima cumque?    
-                    </p>
-                    <small class="text-muted">
-                        <strong>12-12-2021</strong>
-                        <span>Copyright</span>
-                    </small>
-                </div>
-            </div>
+         <!-- Images Container -->
+         <div class="images-container"></div>
         </div>
-    </div>
-
-    <!-- Save Confirmation -->
-    <div class="save-confirmed" hidden>
-        <h1>ADDED!</h1>
-    </div>
-
-
-
-    <!-- Script -->
-    <script src="script.js"></script>
+        <!-- Save Confirmation -->
+        <div class="save-confirmed" hidden>
+            <h1>ADDED!</h1>
+        </div>
+        <!-- Script -->
+        <script src="script.js"></script>
 </body>
 </html>

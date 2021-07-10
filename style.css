@@ -43,6 +43,15 @@ body {
   display: flex;
   justify-content: center;
 }
+.name {
+  position: fixed;
+  left: 5px;
+  top: 0;
+  font-family: sans-serif;
+  font-weight: 700;
+  color:black;
+  z-index: 10;
+}
 
 .background {
   background: whitesmoke;
@@ -127,6 +136,11 @@ body {
     line-height: 1.4rem;
     font-size: 0.9rem;
     text-align: justify;
+  }
+  .navigation-container {
+    position: fixed;
+    top: 0;
+    right: 5px;
   }
 
   .images-container{
